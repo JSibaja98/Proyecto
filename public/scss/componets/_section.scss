@@ -1,0 +1,21 @@
+.section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    &--contact {
+        width: 800px;
+        height: 500px;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        background: cadetblue;
+    }
+    &__data {
+        min-width: 170px;
+        height: 40px;
+    }
+    &__label {
+        margin-left: 10px;
+    }
+}
