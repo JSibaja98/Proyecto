@@ -35,3 +35,7 @@ body {
   min-width: 170px;
   height: 40px;
 }
+
+.section__label {
+  margin-left: 10px;
+}
