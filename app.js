@@ -13,7 +13,7 @@ const routes = require('./src/routes/router');
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './src/views'));
-app.set('css', path.join(__dirname, './css'));
+app.set(express.static('css'));
 
 // middlewares
 app.use(logger('dev'));
