@@ -3,22 +3,28 @@
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    text-align: center;
     &--contact {
         min-width: 300px;
-        height: 500px;
-        margin-top: 2em;
-        background: cadetblue;
+        height: 400px;
+        margin-top: 1em;
         margin-left: auto;
         margin-right: auto;
+        background: lightgreen;
     }
     &__data {
         width: 300px;
         height: 40px;
         border-radius: 10px;
+        margin-right: 10px;
         border: none;
+        margin-left: auto;
+        margin-right: auto;
     }
     &__label {
         font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media(min-width: 378px) {
         &__data {
@@ -30,12 +36,12 @@
             margin-right: auto;
         }
     }
-    @media(min-width: 700px) {
+    @media(min-width: 689px) {
         &--contact {
             max-width: 700px;
         }
         &__data {
-            width: 300px;
+            width: 400px;
         }
         &__label {
             width: 200px;
