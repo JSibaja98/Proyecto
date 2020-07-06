@@ -7,12 +7,13 @@ const myConnection = require('express-myconnection');
 const app = express();
 
 // routes del cliente
-//const clienteRoutes = require('./routes/cliente');
+const routes = require('./src/routes/router');
 
 //settings
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, './src/views'));
+app.set('css', path.join(__dirname, './css'));
 
 // middlewares
 app.use(logger('dev'));
@@ -27,7 +28,8 @@ app.use(express.urlencoded({ extended: false }));
 
 
 // routes     
-app.use('/', clienteRoutes);
+app.use('/', routes);
+
 
 
 // inicio del servidor
