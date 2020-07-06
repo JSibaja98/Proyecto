@@ -8,4 +8,8 @@ controller.contact = (req, res) => {
     res.render('contact');
 };
 
+controller.login = (req, res) => {
+    res.render('login');
+};
+
 module.exports = controller;
