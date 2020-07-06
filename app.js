@@ -13,6 +13,7 @@ const routes = require('./src/routes/router');
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './src/views'));
+app.use('/public', express.static('./public'));
 
 // middlewares
 app.use(logger('dev'));
@@ -24,7 +25,6 @@ app.use(logger('dev'));
 //database: 'crudnodejs'
 //}, 'single'));
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static('css'));
 
 
 // routes     
