@@ -1,5 +1,17 @@
 .nav {
     &--header {
-        background: red;
+        flex: 1 1 auto;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+        &--right{
+            display: inline;
+        }
+    }
+    &__link{
+        text-decoration: none;
     }
 }

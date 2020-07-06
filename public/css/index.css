@@ -1,3 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.banner {
+  display: flex;
+}
+
+.banner__img {
+  width: 100vw;
+  height: 100px;
+  display: block;
+}
+
 .nav--header {
-  background: red;
+  flex: 1 1 auto;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__item--right {
+  display: inline;
+}
+
+.nav__link {
+  text-decoration: none;
 }

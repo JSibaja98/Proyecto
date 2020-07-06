@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.banner{
+    display: flex;
+    &__img{
+        width: 100vw;
+        height: 100px;
+        display: block;
+    }
+}
