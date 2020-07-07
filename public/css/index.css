@@ -131,10 +131,15 @@ body {
   }
 }
 
+.section--billboard {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .login {
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: 3.5%;
+  margin-top: 2%;
 }
 
 .login--panel {

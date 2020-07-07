@@ -54,4 +54,8 @@
             width: 200px;
         }
     }
+    &--billboard{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }

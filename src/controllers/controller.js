@@ -12,4 +12,8 @@ controller.login = (req, res) => {
     res.render('login');
 };
 
+controller.billboard = (req, res) => {
+    res.render('billboard');
+};
+
 module.exports = controller;
