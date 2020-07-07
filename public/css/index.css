@@ -22,8 +22,8 @@ body {
 }
 
 .banner__img {
-  width: 100vw;
-  height: 100px;
+  width: 100%;
+  max-height: 200px;
   display: block;
 }
 
@@ -128,5 +128,40 @@ body {
   }
   .section__label {
     width: 200px;
+  }
+}
+
+.login {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 3.5%;
+}
+
+.login--panel {
+  min-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.login__data {
+  width: 60%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.login__icon {
+  width: 100px;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .login--panel {
+    max-width: 600px;
+    margin-bottom: 0;
   }
 }

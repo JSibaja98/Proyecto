@@ -1,0 +1,30 @@
+.login {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 2%;
+    &--panel {
+        min-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+    &__data {
+        width: 60%;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+    &__icon {
+        width: 100px;
+        height: auto;
+    }
+    @media(min-width: 600px) {
+        &--panel {
+            max-width: 600px;
+            margin-bottom: 0;
+        }
+    }
+}

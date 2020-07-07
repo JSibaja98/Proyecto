@@ -17,13 +17,13 @@ app.use('/public', express.static('./public'));
 
 // middlewares
 app.use(logger('dev'));
-//app.use(myConnection(mysql, {
-//  host: 'localhost',
-//user: 'root',
-//password: '',
-//port: 3306,
-//database: 'crudnodejs'
-//}, 'single'));
+app.use(myConnection(mysql, {
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    port: 3306,
+    database: 'proyectomulti'
+}, 'single'));
 app.use(express.urlencoded({ extended: false }));
 
 
