@@ -3,6 +3,7 @@ const express = require('express');
 const logger = require('morgan');
 const mysql = require('mysql');
 const myConnection = require('express-myconnection');
+const nodemailer = require('nodemailer');
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use(myConnection(mysql, {
     database: 'proyectomulti'
 }, 'single'));
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 
 // routes     
