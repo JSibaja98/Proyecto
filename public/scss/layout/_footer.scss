@@ -1,5 +1,6 @@
 .footer {
     margin-top: 20px;
+    display: flex;
     justify-content: space-evenly;
     padding: 15px;
     align-items: center;
@@ -7,13 +8,14 @@
         font-size: 18px;
         color: white;
     }
+    &__item {
+        max-width: 90px;
+    }
+    &__img {
+        width: 48px;
+    }
 }
 
-
-@media(min-width: 1500px) {
-    .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
+.logo {
+    width: 90px;
 }
