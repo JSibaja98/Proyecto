@@ -49,6 +49,7 @@ body {
 
 .footer {
   margin-top: 20px;
+  display: flex;
   justify-content: space-evenly;
   padding: 15px;
   align-items: center;
@@ -59,12 +60,16 @@ body {
   color: white;
 }
 
-@media (min-width: 1500px) {
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
+.footer__item {
+  max-width: 90px;
+}
+
+.footer__img {
+  width: 48px;
+}
+
+.logo {
+  width: 90px;
 }
 
 .section {
@@ -173,10 +178,11 @@ body {
 
 .article__billboard {
   position: relative;
-  width: 300px;
+  width: 275px;
   height: 400px;
   background: #000;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+  margin: 30px auto 0;
 }
 
 .article__billboard--description {
@@ -198,24 +204,19 @@ body {
   left: 0;
 }
 
-.article__billboard__title--billboard {
+.article__title--billboard {
   margin: 0;
   padding: 0;
   font-size: 20px;
 }
 
-.article__billboard__text--billboard {
-  margin: 10px 0 0;
+.article__text--billboard {
+  margin: 20px 0 0;
   padding: 0;
-  opacity: 0;
+  opacity: 1;
   line-height: 1.2rem;
   transition: 0.5s;
   text-align: justify;
-}
-
-.article__billboard__text--billboard:hover {
-  opacity: 1;
-  transition-delay: 0.5s;
 }
 
 .billboardcontainer {
