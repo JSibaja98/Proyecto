@@ -235,7 +235,3 @@ body {
   object-fit: cover;
   transition: 0.5s;
 }
-
-.billboardcontainer:hover {
-  opacity: 0;
-}
