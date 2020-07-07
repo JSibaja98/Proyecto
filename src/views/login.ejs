@@ -1,27 +1,27 @@
 <%- include('partials/_header.ejs') %>
-
-    <section class=" login login--panel">
-        <div class="card bg-primary text-white ">
-            <div class="card-header">
-                <img class="login__icon" src="/public//img/anonimo.svg" alt="Logo">
-            </div>
-            <div class="card-body ">
-                <div class="row mt-3">
-                    <label class="col-4">Nombre</label>
-                    <input class="login__data" type="text">
+    <form action="/log_In" method="POST">
+        <section class=" login login--panel">
+            <div class="card bg-primary text-white ">
+                <div class="card-header">
+                    <img class="login__icon" src="/public//img/anonimo.svg" alt="Logo">
                 </div>
+                <div class="card-body ">
+                    <div class="row mt-3">
+                        <label class="col-4">Nombre</label>
+                        <input class="login__data" name="nombre" type="text">
+                    </div>
 
-                <div class="row mt-3">
-                    <label class="col-4">Contraseña</label>
-                    <input class="login__data" type="text">
+                    <div class="row mt-3">
+                        <label class="col-4">Contraseña</label>
+                        <input class="login__data" name="password" type="text">
+                    </div>
+
                 </div>
-
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-outline-warning">Log in</button>
+                </div>
             </div>
-            <div class="card-footer">
-                <a class="btn btn-outline-warning" href="/log_In">Log in</a>
             </div>
-        </div>
-        </div>
-    </section>
-
+        </section>
+    </form>
     <%- include('partials/_footer.ejs') %>
