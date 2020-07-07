@@ -8,5 +8,6 @@ router.get('/contact', controller.contact);
 router.get('/login', controller.login);
 router.post('/log_In', controllerUsuario.login);
 router.get('/billboard', controller.billboard);
+router.get('/about', controller.about);
 
 module.exports = router;
