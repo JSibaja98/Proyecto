@@ -7,10 +7,14 @@ controller.login = (req, res) => {
             if (err) {
                 res.send(err);
             }
+            console.log(usuario[0]);
             if (usuario[0] == null) {
+                console.log('No registrado');
                 res.redirect('/');
             } else {
-                res.redirect('/contact');
+                res.end()
+                console.log('esta registrado');
+                res.render('index');
             }
 
         });
