@@ -54,15 +54,27 @@
             width: 200px;
         }
     }
-    &--billboard{
+    &--billboard {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    &--about{
+    &--about {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+    &__contenedorDialog {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    &__dialog {
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        &::backdrop {
+            background: rgba(1, 114, 180, 0.3);
+        }
     }
 }

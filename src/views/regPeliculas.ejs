@@ -1,3 +1,75 @@
 <%- include('partials/_header.ejs') %>
-    <p>This is one page</p>
+    <section class="section">
+        <button class="btn btn-primary" onclick="abrirDialog()">Agregar una pelicula</button>
+
+        <dialog id="dialog" class="section__dialog">
+            <form action="/adminRegCartelera" method="POST">
+                <div class="card-header bg-primary">
+                    <h4 class="card-title text-white">Registro de peliculas</h4>
+                </div>
+                <div class="section__contenedorDialog">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Nombre" name="nombre" required>
+                                <small id="nameHelp" class="form-text text-muted">Ingresa el nombre de la pelicula.</small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <label for="descripcion">Descripcion</label>
+                                <textarea type="text" class="form-control" id="descripcion" aria-describedby="desclHelp" placeholder="Descripcion" name="descripcion" required></textarea>
+                                <small id="desclHelp" class="form-text text-muted">Ingresa una descripcion de la pelicula.</small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <label for="imagen">Imagen</label>
+                                <input type="url" class="form-control" id="imagen" aria-describedby="imagenlHelp" placeholder="https://google.com/image" name="imagen" required>
+                                <small id="imagenlHelp" class="form-text text-muted">Ingresa la imagen que quieres mostrar en la cartelera mediante una url.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-primary ">Registrar</button>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+    </section>
+
+    <section class="section section--billboard">
+        <%if(data){%>
+            <%for(let i = 0; i < data.length; i++){%>
+                <article class="article__billboard">
+                    <div class="billboardcontainer">
+                        <img class="billboardcontainer__img" src="<%= data[i].imagen%>" alt="movie" />
+                    </div>
+                    <article class="article__billboard article__billboard--description">
+                        <h3 class="article__title--billboard">
+                            <%= data[i].nombre%>
+                        </h3>
+                        <p class="article__text--billboard">
+                            <%= data[i].descripcion%>
+                        </p>
+                    </article>
+                </article>
+                <%}%>
+                    <%}%>
+    </section>
+
+    <script text="javascript">
+        function abrirDialog() {
+            var dialog = document.getElementById('dialog');
+            dialog.showModal();
+        }
+
+        function cerrarDialog() {
+            var dialog = document.getElementById('dialog');
+            dialog.close();
+        }
+    </script>
     <%- include('partials/_footer.ejs') %>

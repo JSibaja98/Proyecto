@@ -12,7 +12,6 @@ controller.login = (req, res) => {
                 console.log('No registrado');
                 res.redirect('/');
             } else {
-                res.end()
                 console.log('esta registrado');
                 res.redirect('/adminRegCartelera');
             }
