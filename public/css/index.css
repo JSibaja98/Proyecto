@@ -167,6 +167,12 @@ body {
   background: rgba(1, 114, 180, 0.3);
 }
 
+.section__deal {
+  width: 90%;
+  margin: 50px auto;
+  max-width: 1130px;
+}
+
 .login {
   padding-right: 15px;
   padding-left: 15px;
