@@ -12,6 +12,6 @@ router.get('/billboard', controller.billboard);
 router.get('/about', controller.about);
 router.get('/deals', controller.deals);
 router.post('/send-email', email.send);
-router.arguments('/adminRegCartelera', email.admin);
+router.get('/adminRegCartelera', controller.admin);
 
 module.exports = router;
