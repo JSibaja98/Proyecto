@@ -164,7 +164,7 @@ body {
 }
 
 .section__dialog::backdrop {
-  background: rgba(1, 114, 180, 0.3);
+  background: linear-gradient(83deg, rgba(200, 231, 255, 0.5), rgba(255, 203, 242, 0.5));
 }
 
 .section__deal {
@@ -236,7 +236,7 @@ body {
   left: 10%;
   width: 80%;
   height: 60px;
-  background: transparent;
+  background: rgba(200, 231, 255, 0.3);
   transition: 0.5s;
   overflow: hidden;
   padding: 7px;
@@ -247,12 +247,8 @@ body {
   height: 100%;
   bottom: 0;
   left: 0;
-  color: #000;
-  background: #fff;
-}
-
-.article__billboard--description:hover .article__title--billboard {
-  color: #000;
+  color: #fff;
+  background: rgba(255, 203, 242, 0.5);
 }
 
 .article__text--billboard {

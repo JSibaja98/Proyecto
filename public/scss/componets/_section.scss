@@ -74,10 +74,10 @@
         margin-right: auto;
         border: none;
         &::backdrop {
-            background: rgba(1, 114, 180, 0.3);
+            background: linear-gradient(83deg, rgba(200, 231, 255, 0.5), rgba(255, 203, 242, 0.5));
         }
     }
-    &__deal{
+    &__deal {
         width: 90%;
         margin: 50px auto;
         max-width: 1130px;
