@@ -11,6 +11,6 @@ router.post('/log_In', controllerUsuario.login);
 router.get('/billboard', controller.billboard);
 router.get('/about', controller.about);
 router.post('/send-email', email.send);
-router.arguments('/adminRegCartelera', email.admin);
+router.get('/adminRegCartelera', controller.admin);
 
 module.exports = router;
