@@ -15,5 +15,6 @@ router.get('/deals', controller.deals);
 router.post('/send-email', email.send);
 router.get('/adminRegCartelera', controllerPeliculas.list);
 router.post('/adminRegCartelera', controllerPeliculas.add);
+router.post('/adminDelCartelera/:id', controllerPeliculas.remove);
 
 module.exports = router;
