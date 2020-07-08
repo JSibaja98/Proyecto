@@ -22,5 +22,8 @@ controller.about = (req, res) => {
 controller.admin = (req, res) => {
     res.render('regPeliculas');
 };
+controller.deals = (req, res) => {
+    res.render('deals');
+};
 
 module.exports = controller;
