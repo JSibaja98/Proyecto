@@ -11,6 +11,7 @@ router.get('/login', controller.login);
 router.post('/log_In', controllerUsuario.login);
 router.get('/billboard', controllerPeliculas.list);
 router.get('/about', controller.about);
+router.get('/deals', controller.deals);
 router.post('/send-email', email.send);
 router.get('/adminRegCartelera', controllerPeliculas.list);
 router.post('/adminRegCartelera', controllerPeliculas.add);

@@ -19,5 +19,11 @@ controller.billboard = (req, res) => {
 controller.about = (req, res) => {
     res.render('aboutUs');
 };
+controller.admin = (req, res) => {
+    res.render('regPeliculas');
+};
+controller.deals = (req, res) => {
+    res.render('deals');
+};
 
 module.exports = controller;
