@@ -41,25 +41,31 @@
         </dialog>
     </section>
 
-    <section class="section section--billboard">
-        <%if(data){%>
-            <%for(let i = 0; i < data.length; i++){%>
-                <article class="article__billboard">
-                    <div class="billboardcontainer">
-                        <img class="billboardcontainer__img" src="<%= data[i].imagen%>" alt="movie" />
-                    </div>
-                    <article class="article__billboard article__billboard--description">
-                        <h3 class="article__title--billboard">
-                            <%= data[i].nombre%>
-                        </h3>
-                        <p class="article__text--billboard">
-                            <%= data[i].descripcion%>
-                        </p>
+
+    <form>
+        <section class="section section--billboard">
+            <%if(data){%>
+                <%for(let i = 0; i < data.length; i++){%>
+                    <article class="article__billboard">
+                        <div class="billboardcontainer">
+                            <img class="billboardcontainer__img" src="<%= data[i].imagen%>" alt="movie" />
+                        </div>
+                        <article class="article__billboard article__billboard--description">
+                            <h3 class="article__title--billboard">
+                                <%= data[i].nombre%>
+                            </h3>
+                            <p class="article__text--billboard">
+                                <%= data[i].descripcion%>
+                            </p>
+                            <button type="submit" class="btn btn-danger" style="margin-top: 30%;"> Eliminar </button>
+                        </article>
                     </article>
-                </article>
-                <%}%>
+
                     <%}%>
-    </section>
+                        <%}%>
+        </section>
+    </form>
+
 
     <script text="javascript">
         function abrirDialog() {

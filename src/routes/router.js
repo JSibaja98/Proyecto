@@ -9,7 +9,7 @@ router.get('/', controller.principal);
 router.get('/contact', controller.contact);
 router.get('/login', controller.login);
 router.post('/log_In', controllerUsuario.login);
-router.get('/billboard', controllerPeliculas.list);
+router.get('/billboard', controllerPeliculas.listBillboard);
 router.get('/about', controller.about);
 router.get('/deals', controller.deals);
 router.post('/send-email', email.send);
