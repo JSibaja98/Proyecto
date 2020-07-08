@@ -38,4 +38,20 @@ controller.listBillboard = (req, res) => {
     })
 }
 
+controller.remove = (req, res) => {
+    const id = req.params.id;
+    req.getConnection((err, conn) => {
+        if (err) {
+            res.json(err);
+        }
+        conn.query('delete from peliculas where id = ?', id, (err, row) => {
+            if (err) {
+                res.send(err)
+            }
+            res.redirect('/adminRegCartelera');
+        });
+    });
+};
+
+
 module.exports = controller;
