@@ -14,7 +14,7 @@ controller.login = (req, res) => {
             } else {
                 res.end()
                 console.log('esta registrado');
-                res.render('index');
+                res.redirect('/adminRegCartelera');
             }
 
         });
