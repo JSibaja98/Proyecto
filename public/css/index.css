@@ -26,8 +26,9 @@ body {
 
 .banner__img {
   width: 100%;
-  max-height: auto;
+  height: 200px;
   display: block;
+  object-fit: cover;
 }
 
 .nav--header {
