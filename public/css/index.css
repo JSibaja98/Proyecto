@@ -409,7 +409,6 @@ body {
 }
 
 .contact {
-  background: linear-gradient(83deg, rgba(200, 231, 255, 0.5), rgba(255, 203, 242, 0.5));
   padding: 40px 0;
   box-shadow: 0 0 6px rgba(0, 0, 255, 0.8);
   border-radius: 30px;
@@ -480,5 +479,9 @@ input:valid ~ label {
 }
 
 input:focus ~ .contact__barra::before {
+  width: 100%;
+}
+
+:focus ~ .contact__barra::before {
   width: 100%;
 }
