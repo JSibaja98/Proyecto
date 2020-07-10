@@ -54,6 +54,9 @@ body {
 .footer {
   margin-top: 20px;
   display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   justify-content: space-evenly;
   padding: 15px;
   align-items: center;
