@@ -18,7 +18,7 @@
         border-radius: 10px;
         margin-right: 10px;
         border: solid 1.5px;
-        border-color: #18BC9C;
+        border-color: $eleventh-color;
         margin-left: auto;
         margin-right: auto;
     }
@@ -74,7 +74,7 @@
         margin-right: auto;
         border: none;
         &::backdrop {
-            background: linear-gradient(83deg, rgba(200, 231, 255, 0.5), rgba(255, 203, 242, 0.5));
+            background: linear-gradient(83deg, $quartity-color, $fifth-color);
         }
     }
     &__deal {
