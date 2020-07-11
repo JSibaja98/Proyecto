@@ -1,10 +1,11 @@
 .index {
     &--all {
-        width: 230px;
+        width: 235px;
         perspective: 1000px;
         margin: auto;
         position: relative;
-        margin-top: 60px;
+        margin-top: 90px;
+        height: 330px;
     }
     &__title {
         text-align: center;
