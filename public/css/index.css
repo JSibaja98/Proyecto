@@ -340,7 +340,6 @@ body {
 @media (max-width: 1130px) {
   .article__descAbout {
     width: 100%;
-    height: auto;
     right: 0;
     padding: 30px;
     text-align: center;
